@@ -92,14 +92,12 @@ h1{
 p,h2 {
 	font-family: 'Lato', sans-serif;
 }
-
-
 .lifeDiv{
 	position: static;
 	width: 50vw;
 	padding-top: 37vh;
 	margin-left: 8vw;
-	height: 50vh;
+	/*height: 50vh;*/
 }
 .lifeDiv p {
 	margin-top: 1em;
@@ -109,19 +107,64 @@ p,h2 {
 	width: 50vw;
 	padding-top: 40vh;
 	margin-left: 8vw;
-	height: 40vh;
+	/*height: 40vh;*/
 }
 .stoicismDiv p {
 	margin-top: 1.3em;
 }
 .legacyDiv {
-	position: static;
+	position: relative;
 	width: 50vw;
-	padding-top: 20vh;
-	padding-bottom: 10vh;
+	margin-top: 40vh;
+  	margin-bottom: 30vh;
 	margin-left: 8vw;
-	height: 50vh;
+	/*height: 50vh;*/
 }
 .legacyDiv p {
 	margin-top: 1.3em;
+}
+
+@media only screen and (max-width: 900px) {
+  body { -webkit-text-size-adjust: none; 
+    background: none;
+    background-color: black;
+       width: 100%;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.3em;
+    width: 80vw;
+
+  }
+
+  h1{
+    position: static;
+    margin-top: 15vh;
+    margin-left: 5vw;
+    font-size: 25px;
+    font-family: 'Raleway', serif;
+    font-weight: lighter;
+    z-index: 3;
+
+  }
+
+    .greyLine {
+      position: static;
+      background-color: gray;
+      height: 1.5px;
+      width: 60vw;
+      margin-top: 2px;
+      margin-left: 15vw;
+      z-index: 4;
+    }
+    .blackBackground {
+      display: none;
+    }  
+    .contentdiv {
+    	/*padding: 5vh 0px 0px;*/
+    	margin-left: 10vw;
+    	margin-top: 30px;
+    	padding-top: 0px;
+
+    }
 }
